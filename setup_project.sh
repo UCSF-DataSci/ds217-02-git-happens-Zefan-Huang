@@ -1,11 +1,10 @@
-!/bin/bash  # Create project structure
+#!/bin/bash 
+# Create project structure
 
 echo "Setting up project..."
 
 mkdir -p src data output 
 
-chmod +x setup_project.sh
-./setup_project.sh
 
 cat > .gitignore << 'EOF'
 # Python cache files
@@ -21,7 +20,8 @@ EOF
 cat>requirements.txt << 'EOF'
 EOF
 
-cat > student.csv << 'EOF'
+
+cat > data/students.csv << 'EOF'
 name,age,grade,subject
 Alice,20,85,Math
 Bob,22,90,Science
@@ -37,8 +37,14 @@ Louis,21,84,Science
 EOF
 
 cat > src/data_analysis.py << 'EOF'
-
+def data_analysis():
     # TODO: Here's somthing to do based on the part 3.
+    pass
 
 EOF
 
+cat > src/data_analysis_functions.py << 'EOF'
+def data_analysis_functions():
+    # TODO: Here's somthing to do based on the part 3.
+    pass
+EOF
