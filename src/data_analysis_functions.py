@@ -1,7 +1,7 @@
 from csv import reader
 from data_analysis import total_student, calculate_average_grade, get_all_subjects
 
-filename = "student.csv"
+filename = "data/student.csv"
 def load_data():
     if filename.lower().endswith('.csv'):
         return load_data(filename)
@@ -9,7 +9,7 @@ def load_data():
         return load_data(filename)
     
 def load_csv(filename):
-    with open("student.csv", encoding="utf-8") as f:   ## encoing is important, although here it's not a big dataset since it was created by me
+    with open("data/students.csv", encoding="utf-8") as f:   ## encoing is important, although here it's not a big dataset since it was created by me
         read_file = reader(f)
         data = list(read_file)
     return data
@@ -81,7 +81,7 @@ def generate_report(data):
     report2 = analyze_data(data,analyze_grade_distribution(data))
     return report2
 
-def save_report(report2, filename="output/analysis_report.txt"):
+def save_result(report2, filename="output/analysis_report.txt"):
     with open(filename, "w", encoding="utf-8") as report_file:
         report_file.write(str(report2)) 
 print( "File saved to output" )
@@ -89,7 +89,7 @@ print( "File saved to output" )
 def main():
     data = load_csv(filename)
     report2 = generate_report(data)
-    save_report(report2)
+    save_result(report2)
     
 if __name__ == "__main__":
      main()

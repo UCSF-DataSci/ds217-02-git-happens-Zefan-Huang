@@ -1,6 +1,6 @@
 #from csv import reader
 
-def load_students ():
+def load_students():
     with open("data/students.csv", encoding="utf-8") as f:
         lines = f.readlines()
 
