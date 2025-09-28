@@ -81,7 +81,7 @@ def generate_report(data):
     report2 = analyze_data(data,analyze_grade_distribution(data))
     return report2
 
-def save_result(report2, filename="output/analysis_report.txt"):
+def save_results(report2, filename="output/analysis_report.txt"):
     with open(filename, "w", encoding="utf-8") as report_file:
         report_file.write(str(report2)) 
 print( "File saved to output" )
@@ -89,7 +89,7 @@ print( "File saved to output" )
 def main():
     data = load_csv(filename)
     report2 = generate_report(data)
-    save_result(report2)
+    save_results(report2)
     
 if __name__ == "__main__":
      main()
