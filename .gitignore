@@ -1,0 +1,8 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Data and secrets
+data/raw/*.csv
+.env
+*.key
