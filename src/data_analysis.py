@@ -5,7 +5,7 @@ def load_students ():
         lines = f.readlines()
 
     data = []
-    for line in lines[0:]:  # 跳过 header
+    for line in lines[0:]: 
         fields = line.strip().split(",")
         data.append(fields)
     return data
