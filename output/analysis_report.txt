@@ -1,1 +1,7 @@
-{'Total Students': 11, 'Max and Min Grade': (95, 70), 'Average Grade': '84.2', 'Subject Count': {'Math': 4, 'Science': 4, 'History': 3}, 'Grade Distribution': {'B': 5, 'A': 3, 'C': 3}, 'Grade Percentage': {'B': '45.5%', 'A': '27.3%', 'C': '27.3%'}}
+Analysis: Advanced Student Report
+Total Students: 11
+Average Grade: 84.2
+Max and Min Grade: (95, 70)
+Subject Count: {'Math': 4, 'Science': 4, 'History': 3}
+Grade Distribution: {'B': 5, 'A': 3, 'C': 3}
+Grade Percentage: {'B': '45.5%', 'A': '27.3%', 'C': '27.3%'}

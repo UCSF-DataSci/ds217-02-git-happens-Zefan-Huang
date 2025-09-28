@@ -83,7 +83,13 @@ def generate_report(data):
 
 def save_results(report2, filename="output/analysis_report.txt"):
     with open(filename, "w", encoding="utf-8") as report_file:
-        report_file.write(str(report2)) 
+        report_file.write("Analysis: Advanced Student Report\n")
+        report_file.write(f"Total Students: {report2['Total Students']}\n")
+        report_file.write(f"Average Grade: {report2['Average Grade']}\n")
+        report_file.write(f"Max and Min Grade: {report2['Max and Min Grade']}\n")
+        report_file.write(f"Subject Count: {report2['Subject Count']}\n")
+        report_file.write(f"Grade Distribution: {report2['Grade Distribution']}\n")
+        report_file.write(f"Grade Percentage: {report2['Grade Percentage']}\n")
 print( "File saved to output" )
 
 def main():
